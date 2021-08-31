@@ -1,0 +1,29 @@
+.section--our-works {
+  padding-top: 0;
+}
+.our-works {
+  display: flex;
+}
+.our-works__item {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.our-works__thumb {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+}
+
+.our-works__title {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white-text;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}

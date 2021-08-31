@@ -1,0 +1,44 @@
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__contacts {
+  margin-right: 70px;
+}
+
+.addres {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.7;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.addres__post {
+  color: $white-text;
+  line-height: 1.71;
+  margin-bottom: 9px;
+}
+.addres__link {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.7;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.addres__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer__title {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white-text;
+  margin-bottom: 20px;
+}
+.footer__link {
+  margin-right: 93px;
+}
