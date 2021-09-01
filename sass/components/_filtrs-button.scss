@@ -1,8 +1,12 @@
 /*buttons-filtr*/
 .filtrs {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 .filtrs__button {
   font-family: Roboto, sans-serif;
