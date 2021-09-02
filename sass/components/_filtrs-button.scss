@@ -33,6 +33,12 @@
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
-.filtrs__item:not(:last-child) {
-  margin-right: 8px;
+
+.filtrs__item {
+  &:nth-child(-n + 3) {
+    margin-bottom: 15px;
+  }
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
