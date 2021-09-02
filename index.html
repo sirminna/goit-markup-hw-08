@@ -18,8 +18,8 @@
 <body>
     <!--Верхушка сайта-->
     <header class="page-header">
-        <div class="container page-header__nav">
-        <nav class="nav-main">
+        <div class="container">
+        <nav class="nav__main">
             <a class="logo" href="./index.html">
                     <span class="logo__in">Web</span>Studio
                 </a>
@@ -30,12 +30,12 @@
             data-menu-button
           >
         <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use class="icon-cross" href="./images/mob.svg#icon-menu"></use>
-            <use class="icon-menu" href="./images/mob.svg#icon-close"></use>
+            <use class="icon-cross" href="./images/mob.svg#icon-close"></use>
+            <use class="icon-menu" href="./images/mob.svg#icon-menu"></use>
         </svg>
         </button>
 
-                <div class="menu__container">
+                <div class="menu__container" id="menu-container" data-menu>
             <ul class="site-nav">
                 <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a></li>
                 <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
@@ -55,6 +55,20 @@
                         <use href="./images/symbol-defs.svg#icon-smartphone"></use></svg>
                     +38 096 111 11 11
                     </a>
+                </li>
+            </ul>
+            <ul class="mobile-list">
+                <li class="mobile-list__item">
+                    <a href="#" aria-label="instagram" class="mobile-list__link">Instagram</a>
+                </li>
+                <li class="mobile-list__item">
+                    <a href="#" aria-label="instagram" class="mobile-list__link">Twitter</a>
+                </li>
+                <li class="mobile-list__item">
+                    <a href="#" aria-label="instagram" class="mobile-list__link">Facebook</a>
+                </li>
+                <li class="mobile-list__item">
+                    <a href="#" aria-label="instagram" class="mobile-list__link">Linkedin</a>
                 </li>
             </ul>
             </div>

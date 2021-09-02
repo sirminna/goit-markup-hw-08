@@ -1,32 +1,30 @@
 .page-header {
+  position: relative;
   border-bottom: 1px solid #ececec;
 }
-.page-header__nav {
+.nav__main {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-}
-
-.menu__container {
-  display: none;
-  @media screen and (min-width: 768px) {
-    display: block;
-    margin-left: 5px;
-  }
+  justify-content: space-between;
 }
 
 /*site-nav*/
 .site-nav {
-  display: flex;
-  align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  position: relative;
-  margin-right: 84px;
-
-  .site-nav__item:not(:last-child) {
-    margin-right: 50px;
+  margin-bottom: 302px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-right: 84px;
   }
+  .site-nav__item:not(:last-child) {
+    margin-bottom: 32px;
+    @media screen and (min-width: 768px) {
+      margin-right: 50px;
+    }
+  }
+
   .site-nav__link {
     color: $title-text-color;
     font-weight: 500;
@@ -39,24 +37,26 @@
       color: $accent-color;
     }
   }
+
   .site-nav__link--current {
     color: $accent-color;
-    position: relative;
+    @media screen and (min-width: 768px) {
+      position: relative;
 
-    &::after {
-      position: absolute;
-      content: '';
-      left: 0;
-      bottom: 0;
-      top: 12px;
-      margin-top: 32px;
-      display: block;
-      width: 100%;
-      height: 2px;
-      background-color: $accent-color;
+      &::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        top: 12px;
+        margin-top: 32px;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: $accent-color;
+      }
     }
   }
-
   .contacts {
     margin-top: 15px;
     align-items: center;
