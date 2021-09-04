@@ -18,14 +18,16 @@
 }
 .clients {
   display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
+  @media screen and (max-width: 1119px) {
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 .clients__item {
   width: calc((100% - 4 * 15px) / 2);
   margin: 15px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1119px) {
     width: calc((100% - 6 * 15px) / 3);
     margin: 15px;
   }

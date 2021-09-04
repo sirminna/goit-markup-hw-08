@@ -51,6 +51,9 @@
 .mobile-list {
   margin-top: 64px;
   display: flex;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 .mobile-list__item {
   position: relative;
