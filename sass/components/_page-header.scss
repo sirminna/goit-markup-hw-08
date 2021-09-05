@@ -17,11 +17,17 @@
     padding-top: 30px;
     padding-bottom: 30px;
     margin-right: 84px;
+    margin-bottom: 0;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+      margin-right: 302px;
+    }
   }
 }
 .site-nav__item:not(:last-child) {
   margin-bottom: 32px;
   @media screen and (min-width: 768px) {
+    margin-bottom: 0;
     margin-right: 50px;
   }
 }
@@ -59,15 +65,29 @@
   }
 }
 .contacts {
+  @media screen and (min-width: 768px) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
   @media screen and (min-width: 1200px) {
     display: flex;
-    margin-left: auto;
     align-items: center;
   }
 }
 
 .contacts__item:not(:last-child) {
   margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
 }
 
 .contacts__icon {
@@ -92,6 +112,13 @@
     align-items: center;
     font-size: 12px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      color: $primary-text-color;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
     &:hover,
     &:focus {
@@ -105,9 +132,30 @@
 }
 
 .contacts__link--tel {
-  @media screen and (max-width: 768px) {
-    font-size: 34px;
-    line-height: 1.18;
+  font-size: 34px;
+  line-height: 1.18;
+  color: $accent-color;
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    display: flex;
+    font-size: 12px;
+    color: $primary-text-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    color: $primary-text-color;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover,
+  &:focus {
     color: $accent-color;
+  }
+  &:hover .contacts__icon,
+  &:focus .contacts__icon {
+    fill: $accent-color;
   }
 }

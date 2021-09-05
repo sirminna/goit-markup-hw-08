@@ -3,6 +3,12 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer__info {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
 .footer__tab {
   @media screen and (min-width: 768px) {
     display: flex;
@@ -15,7 +21,7 @@
     text-align: center;
   }
   @media screen and (min-width: 1200px) {
-    margin-bottom: 9px;
+    margin-right: 70px;
   }
 }
 
@@ -53,7 +59,9 @@
   text-transform: uppercase;
   color: $white-text;
   margin-bottom: 20px;
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 .footer__link {
   margin-top: 60px;
