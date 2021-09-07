@@ -1,12 +1,14 @@
 /*hero*/
 .hero {
   background-color: $footer-background;
-  padding: 200px 0px 200px;
+  padding: 118px 0px 118px;
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0px 200px;
+  }
 }
-
 .hero__overlay {
   max-width: 1600px;
-  height: 600px;
+  max-height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -27,7 +29,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('../images/heromobb.jpg');
+      url('../images/heromob@2x.jpg');
   }
 
   @media screen and (min-width: 481px) {
@@ -46,7 +48,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url('../images/herotabb.jpg');
+        url('../images/herotab@2x.jpg');
     }
   }
 
@@ -66,7 +68,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url('../images/herob.jpg');
+        url('../images/hero@2x.jpg');
     }
   }
 }

@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -18,13 +17,11 @@
 }
 .clients {
   display: flex;
-  @media screen and (max-width: 1199px) {
-    flex-wrap: wrap;
-    margin: -15px;
-  }
+  flex-wrap: wrap;
+  margin: -15px;
 }
 .clients__item {
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 468px) {
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }
@@ -34,11 +31,11 @@
     margin: 15px;
   }
   @media screen and (min-width: 1200px) {
-    :not(:last-child) {
-      margin-right: 30px;
-    }
+    width: calc((100% - 12 * 15px) / 6);
+    margin: 15px;
   }
 }
+
 .clients__link:hover .clients__icon,
 .clients__link:focus .clients__icon {
   fill: $accent-color;

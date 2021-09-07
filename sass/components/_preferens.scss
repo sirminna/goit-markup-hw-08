@@ -1,12 +1,9 @@
 /*preferens*/
 .preferens {
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
   }
 }
 .preferens__item {
@@ -16,9 +13,8 @@
     margin: 15px;
   }
   @media screen and (min-width: 1200px) {
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
   }
 }
 .preferens__icon {

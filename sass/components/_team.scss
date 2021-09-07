@@ -1,12 +1,19 @@
 .our-team {
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
   }
+}
+.our-team__item {
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
   @media screen and (min-width: 1200px) {
-    display: flex;
-    justify-content: space-between;
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
   }
 }
 .team-content {
@@ -36,11 +43,4 @@
 }
 .section--our-team {
   background-color: #f5f4fa;
-}
-.our-team__item {
-  margin-bottom: 30px;
-  @media screen and (min-width: 768px) {
-    width: calc((100% - 4 * 15px) / 2);
-    margin: 15px;
-  }
 }

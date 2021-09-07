@@ -3,7 +3,7 @@
 .our-projects {
   margin-top: 40px;
   @media screen and (min-width: 768px) {
-    margin-top: -15px;
+    margin: -15px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -16,6 +16,11 @@
   }
 }
 .our-projects__item {
+  @media screen and (max-width: 768px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
